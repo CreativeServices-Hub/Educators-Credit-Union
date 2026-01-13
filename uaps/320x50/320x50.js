@@ -27,7 +27,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap2 = function() {
+(lib.Bitmap3 = function() {
 	this.initialize(ss["320x50_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -47,7 +47,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.Bitmap2();
+	this.instance = new lib.Bitmap3();
 	this.instance.setTransform(0,0,0.5,0.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));

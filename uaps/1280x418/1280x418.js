@@ -55,7 +55,7 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap6 = function() {
+(lib.Bitmap7 = function() {
 	this.initialize(ss["1280x418_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
@@ -91,12 +91,13 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Bitmap5();
+	this.instance.setTransform(0,-12);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.Symbol4, new cjs.Rectangle(0,0,245,45), null);
+}).prototype = getMCSymbolPrototype(lib.Symbol4, new cjs.Rectangle(0,-12,245,45), null);
 
 
 (lib.Symbol3 = function(mode,startPosition,loop,reversed) {
@@ -205,14 +206,15 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(87).to({_off:false},0).to({regY:22.5,scaleX:1,scaleY:1},23,cjs.Ease.get(1)).wait(130));
 
 	// Layer_1
-	this.instance_4 = new lib.Bitmap6();
+	this.instance_4 = new lib.Bitmap7();
+	this.instance_4.setTransform(0,1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(240));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(640,209,640,209);
+p.nominalBounds = new cjs.Rectangle(640,210,640,209);
 // library properties:
 lib.properties = {
 	id: 'DA72AA59A1924B2581A62C17578771F7',

@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"970x250_atlas_1", frames: [[0,252,707,80],[0,334,632,70],[0,406,528,82],[0,0,970,250],[709,252,245,45]]}
+		{name:"970x250_atlas_1", frames: [[0,252,707,80],[0,334,632,70],[0,406,528,82],[709,252,245,45],[0,0,970,250]]}
 ];
 
 
@@ -48,14 +48,14 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap7 = function() {
+(lib.Bitmap8 = function() {
 	this.initialize(ss["970x250_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap8 = function() {
+(lib.Bitmap9 = function() {
 	this.initialize(ss["970x250_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
@@ -209,7 +209,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(75).to({_off:false},0).to({regY:15.1,scaleX:1,scaleY:1,x:871.9,y:220.6},19,cjs.Ease.get(1)).wait(146));
 
 	// Layer_1
-	this.instance_4 = new lib.Bitmap7();
+	this.instance_4 = new lib.Bitmap9();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(240));
 
